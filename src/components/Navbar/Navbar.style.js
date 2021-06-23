@@ -4,8 +4,8 @@ import { FaPhoenixFramework } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background-color: #121212;
-  height: 80px;
+  background-color: #000000;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   ${Container}
 `;
 
@@ -61,20 +61,20 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 100px;
     right: ${({ click }) => (click ? 0 : "100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background-color: #121212;
+    background-color: #000000;
   }
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
-  border-bottom: 2px solid transparent;
+  height: 100px;
+  /* border-bottom: 2px solid transparent; */
 
   &:hover {
-    border-bottom: 2px solid red;
+    /* border-bottom: 2px solid red; */
   }
 
   @media screen and (max-width: 960px) {

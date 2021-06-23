@@ -51,20 +51,28 @@ export default function Navbar() {
 
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to='/'>Home</NavLinks>
+                <NavLinks to='/blog'>Blog</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to='/'>Services</NavLinks>
+                <NavLinks to='/about'>Careers</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to='/contact'>Community</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to='/contact'>Contact Us</NavLinks>
               </NavItem>
 
               <NavItemBtn>
-                <NavBtnLink to='/'>
+                <NavBtnLink to='/sign-up'>
                   {button ? (
-                    <Button primary>Signup Now</Button>
+                    <Button primary>Signup</Button>
                   ) : (
                     <Button fontBig primary>
-                      Signup Now
+                      Signup
                     </Button>
                   )}
                 </NavBtnLink>
