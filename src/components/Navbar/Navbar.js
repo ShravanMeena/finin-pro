@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
@@ -17,17 +17,32 @@ import {
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
+  const [button, setButton] = useState(false);
 
   const handleClick = () => setClick(!click);
 
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavbarContainer>
             <NavLogo to='/'>
-              <NavIcon />
               Finin
+              <NavIcon />
+              Pro
             </NavLogo>
 
             <MobileIcon onClick={handleClick}>
@@ -45,9 +60,13 @@ export default function Navbar() {
 
               <NavItemBtn>
                 <NavBtnLink to='/'>
-                  <Button fontBig primary>
-                    Signup Now
-                  </Button>
+                  {button ? (
+                    <Button primary>Signup Now</Button>
+                  ) : (
+                    <Button fontBig primary>
+                      Signup Now
+                    </Button>
+                  )}
                 </NavBtnLink>
               </NavItemBtn>
             </NavMenu>
