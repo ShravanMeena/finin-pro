@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+
 }
 `;
 
@@ -26,7 +27,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "red" : "green")};
+  background: ${({ primary }) => (primary ? "#36e2a3" : "#121212")};
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   white-space: nowrap;
@@ -38,7 +39,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.3s ease;
     background: #fff;
-    background: ${({ primary }) => (primary ? "green" : "red")};
+    background: ${({ primary }) => (primary ? "#121212" : "#36e2a3")};
   }
 
   @media screen and (max-width: 991px) {

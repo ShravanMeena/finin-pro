@@ -69,11 +69,9 @@ export default function Navbar() {
               <NavItemBtn>
                 <NavBtnLink to='/sign-up'>
                   {button ? (
-                    <Button primary>Signup</Button>
+                    <Button primary>Join Us</Button>
                   ) : (
-                    <Button fontBig primary>
-                      Signup
-                    </Button>
+                    <Button fontBig>Join Us</Button>
                   )}
                 </NavBtnLink>
               </NavItemBtn>
