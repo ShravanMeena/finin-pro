@@ -41,10 +41,10 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
   }
 `;
@@ -95,7 +95,7 @@ export const NavLinks = styled(Link)`
 
   &:hover {
     transition: all 0.3s ease;
-    color: red;
+    color: #36e2a3;
   }
 
   @media screen and (max-width: 960px) {
@@ -104,7 +104,7 @@ export const NavLinks = styled(Link)`
     padding: 2rem;
     display: table;
     &:hover {
-      color: red;
+      color: #36e2a3;
       transition: all 0.3s ease;
     }
   }

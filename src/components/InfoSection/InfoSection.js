@@ -8,6 +8,7 @@ import {
   TextWrapper,
   TopLine,
   Heading,
+  BottomLine,
   SubTitle,
   ImgWrapper,
   Img,
@@ -27,6 +28,9 @@ export default function InfoSection({
   start,
   alt,
   src,
+  textprimary,
+  bottomLine,
+  lightBottomLine,
 }) {
   return (
     <>
@@ -37,9 +41,17 @@ export default function InfoSection({
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
+                <BottomLine lightBottomLine={lightBottomLine}>
+                  {bottomLine}
+                </BottomLine>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
+
                 <Link to='/sign-up'>
-                  <Button big fontBig primary={primary}>
+                  <Button
+                    big
+                    fontBig
+                    primary={primary}
+                    textprimary={textprimary}>
                     {buttonLabel}
                   </Button>
                 </Link>

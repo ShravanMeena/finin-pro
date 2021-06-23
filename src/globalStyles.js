@@ -31,15 +31,16 @@ export const Button = styled.button`
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   white-space: nowrap;
-  color: #fff;
+  color: ${({ textprimary }) => (!textprimary ? "#36e2a3" : "#121212")};
   outline: none;
   border: none;
   cursor: pointer;
+  font-weight: 500;
 
   &:hover {
     transition: all 0.3s ease;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#121212" : "#36e2a3")};
+    background: ${({ primary }) => (!primary ? "#36e2a3" : "#121212")};
+    color: ${({ textprimary }) => (textprimary ? "#36e2a3" : "#121212")};
   }
 
   @media screen and (max-width: 991px) {

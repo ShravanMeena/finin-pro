@@ -36,7 +36,7 @@ export default function Navbar() {
   window.addEventListener("resize", showButton);
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#36e2a3" }}>
         <Nav>
           <NavbarContainer>
             <NavLogo to='/'>
@@ -69,9 +69,13 @@ export default function Navbar() {
               <NavItemBtn>
                 <NavBtnLink to='/sign-up'>
                   {button ? (
-                    <Button primary>Join Us</Button>
+                    <Button primary textprimary>
+                      Join Us
+                    </Button>
                   ) : (
-                    <Button fontBig>Join Us</Button>
+                    <Button fontBig primary textprimary>
+                      Join Us
+                    </Button>
                   )}
                 </NavBtnLink>
               </NavItemBtn>

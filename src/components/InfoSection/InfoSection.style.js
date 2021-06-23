@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 80px 0;
+  padding: 110px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000000")};
 `;
 
@@ -31,7 +31,7 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 550px;
   padding-top: 0;
   padding-bottom: 60px;
   @media screen and (max-width: 960px) {
@@ -47,8 +47,16 @@ export const TopLine = styled.div`
   margin-bottom: 16px;
 `;
 
+export const BottomLine = styled.div`
+  color: ${({ lightTopLine }) => (!lightTopLine ? "#a9b3c1" : "#4b59f7")};
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  margin-bottom: 25px;
+  font-weight: 500;
+`;
+
 export const Heading = styled.h1`
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+  color: ${({ lightText }) => (lightText ? "#36e2a3" : "#1c2237")};
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
