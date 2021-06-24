@@ -85,17 +85,20 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.a`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   height: 100%;
   padding: 0 1.4rem;
+  outline: none;
+  border: none;
 
   &:hover {
     transition: all 0.3s ease;
     color: #36e2a3;
+    text-decoration: underline;
   }
 
   @media screen and (max-width: 960px) {

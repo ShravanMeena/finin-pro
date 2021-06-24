@@ -12,6 +12,10 @@ import {
   SubTitle,
   ImgWrapper,
   Img,
+  KeyPoint,
+  KeyPointItem,
+  // KeyPointItemImg,
+  KeyPointItemText,
 } from "./InfoSection.style";
 
 export default function InfoSection({
@@ -31,6 +35,8 @@ export default function InfoSection({
   textprimary,
   bottomLine,
   lightBottomLine,
+  isKeyPoint,
+  keyPointData,
 }) {
   return (
     <>
@@ -46,6 +52,17 @@ export default function InfoSection({
                 </BottomLine>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
 
+                {isKeyPoint && (
+                  <KeyPoint>
+                    {keyPointData.map((key, index) => {
+                      return (
+                        <KeyPointItem>
+                          <KeyPointItemText>{key.label}</KeyPointItemText>
+                        </KeyPointItem>
+                      );
+                    })}
+                  </KeyPoint>
+                )}
                 <Link to='/sign-up'>
                   <Button
                     big

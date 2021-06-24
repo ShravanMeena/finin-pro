@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
+// import { Link } from "react-router-dom";
 import {
   Nav,
   NavbarContainer,
@@ -51,23 +52,31 @@ export default function Navbar() {
 
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to='/blog'>Blog</NavLinks>
+                <NavLinks href='https://letsfinin.medium.com/' target='_blank'>
+                  Blog
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to='/about'>Careers</NavLinks>
+                <NavLinks
+                  href='https://angel.co/company/finin/jobs'
+                  target='_blank'>
+                  Careers
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to='/contact'>Community</NavLinks>
+                <NavLinks href='https://build.finin.in/' target='_blank'>
+                  Community
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to='/contact'>Contact Us</NavLinks>
+                <NavLinks href='/contact'>Contact</NavLinks>
               </NavItem>
 
               <NavItemBtn>
-                <NavBtnLink to='/sign-up'>
+                <NavBtnLink to='/'>
                   {button ? (
                     <Button primary textprimary>
                       Join Us

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 110px 0;
+  padding: 70px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000000")};
 `;
 
@@ -84,4 +84,29 @@ export const Img = styled.img`
   display: inline-block;
   /* max-height: 500px; */
   object-fit: contain;
+`;
+
+export const KeyPoint = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+`;
+
+export const KeyPointItem = styled.div`
+  width: 45%;
+`;
+
+export const KeyPointItemImg = styled.img`
+  object-fit: contain;
+  width: 20px;
+`;
+
+export const KeyPointItemText = styled.h1`
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: #7d7d7d;
+  font-weight: 500;
 `;
