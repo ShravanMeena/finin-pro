@@ -4,6 +4,9 @@ export const InfoSec = styled.div`
   color: #fff;
   padding: 70px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000000")};
+  @media screen and (max-width: 960px) {
+    padding: 30px 0;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -60,6 +63,10 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
+
+  @media screen and (max-width: 960px) {
+    font-size: 36px;
+  }
 `;
 
 export const SubTitle = styled.p`
