@@ -113,6 +113,34 @@ export const NavLinks = styled.a`
   }
 `;
 
+export const NavRouteLinks = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 0 1.4rem;
+  outline: none;
+  border: none;
+
+  &:hover {
+    transition: all 0.3s ease;
+    color: #36e2a3;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    display: table;
+    &:hover {
+      color: #36e2a3;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+
 export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {
     display: flex;

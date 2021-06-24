@@ -14,6 +14,7 @@ import {
   NavLinks,
   NavItemBtn,
   NavBtnLink,
+  NavRouteLinks,
 } from "./Navbar.style";
 
 export default function Navbar() {
@@ -72,7 +73,7 @@ export default function Navbar() {
               </NavItem>
 
               <NavItem>
-                <NavLinks href='/contact'>Contact</NavLinks>
+                <NavRouteLinks to='/contact'>Contact</NavRouteLinks>
               </NavItem>
 
               <NavItemBtn>
