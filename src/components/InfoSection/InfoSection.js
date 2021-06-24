@@ -63,7 +63,7 @@ export default function InfoSection({
                     })}
                   </KeyPoint>
                 )}
-                <Link to='/sign-up'>
+                <Link to='/'>
                   <Button
                     big
                     fontBig

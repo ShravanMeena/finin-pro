@@ -40,7 +40,7 @@ export default function Navbar() {
       <IconContext.Provider value={{ color: "#36e2a3" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to='/'>
+            <NavLogo to='/' onClick={() => setClick(false)}>
               Finin
               <NavIcon />
               Pro
