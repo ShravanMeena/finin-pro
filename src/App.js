@@ -4,7 +4,7 @@ import { Navbar } from "./components";
 import Footer from "./components/footer/Footer";
 import GlobalStyle from "./globalStyles";
 import Contact from "./pages/contact/Contact";
-import Home from "./pages/home/Home";
+import Home from "./pages/homePage/Home";
 
 export default function App() {
   return (
