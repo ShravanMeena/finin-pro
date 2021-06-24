@@ -1,16 +1,43 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: url("./assets/font/Avenir-Roman.ttf") format("truetype");
+}
+@font-face {
+  font-family: Avenir-Medium;
+  src: url("./assets/fonts/Avenir-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url("./assets/fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Avenir-Black;
+  src: url("./assets/fonts/Avenir-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Avenir;
+  src: url("./assets/fonts/Avenir-Book.ttf");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+  font-family: Avenir;
+  scroll-behavior: smooth;
+
 }
   body{
    overflow-x: hidden;
     background-color: #000000;
-    margin: 0;
+    margin: 0; 
+     font-family: Avenir;
     padding: 0;
   }
 
