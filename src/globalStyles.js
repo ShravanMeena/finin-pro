@@ -6,8 +6,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-
 }
+  body{
+   overflow-x: hidden;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+
 `;
 
 export const Container = styled.div`
